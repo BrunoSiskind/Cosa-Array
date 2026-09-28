@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class EnemyManager : MonoBehaviour
 {
     public Enemy[] enemies;
     // Start is called before the first frame update
@@ -10,8 +10,9 @@ public class Enemy : MonoBehaviour
     void Start()
     {
      enemies = FindObjectsOfType<Enemy>();
-     Debug.Log(enemies[enemies.Length-1].damadegePoints);
      SetAllEnemiesDamagePointsTo(5);
+     Debug.Log(enemies[enemies.Length-1].damadegePoints);
+     
     }
 
     // Update is called once per frame
