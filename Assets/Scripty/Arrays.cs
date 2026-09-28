@@ -14,10 +14,7 @@ public class Arrays : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(Keycode.C))
-        {
-        ClearArray(edades);
-        }
+        
     }
 
     void ClearArray(int[] array)
@@ -30,7 +27,10 @@ public class Arrays : MonoBehaviour
 
     void SquareOfIndex(int[] array)
     {
+        for (int i = 0; i < array.Length; i++)
+        {
         array[i] = i * i;
+        }
     }
 
     void RandomNumbers(int[] array)
