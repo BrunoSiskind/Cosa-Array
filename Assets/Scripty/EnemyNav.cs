@@ -18,7 +18,7 @@ public class EnemyNav : MonoBehaviour
         }
         else
         {
-            destination. Gameobject.FindGameObjectWithTag("Master").transform;
+            destination = GameObject.FindGameObjectWithTag("Master").transform;
         }
     }
 
