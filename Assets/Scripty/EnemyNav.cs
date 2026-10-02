@@ -28,3 +28,4 @@ public class EnemyNav : MonoBehaviour
         agent.destination = destination.position;
     }
 }
+
